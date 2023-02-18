@@ -3,17 +3,7 @@
   "info": {
     "description": "This is a sample server.",
     "version": "0.0.1",
-    "title": "Noter",
-    "servers": [
-      {
-        "url": "http://localhost:3000/api",
-        "description": "url for local development"
-      },
-      {
-        "url": "https://uptick-project.onrender.com/api",
-        "description": "url for live development"
-      }
-    ]
+    "title": "Noter"
   },
   "servers": [
     {
@@ -21,8 +11,8 @@
       "description": "url for local development"
     },
     {
-      "url": "http://localhost:3001/",
-      "description": "url for local development"
+      "url": "https://uptick-project.onrender.com/api",
+      "description": "url for live development"
     }
   ],
   "components": {
