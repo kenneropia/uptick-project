@@ -5,11 +5,9 @@ const createNoteSchema = z.object({
   content: z.string(),
 });
 
-const updateNoteSchema = z
-  .object({
-    title: z.string(),
-    content: z.string(),
-  })
-  .optional();
+const updateNoteSchema = z.object({
+  title: z.string().optional(),
+  content: z.string().optional(),
+});
 
 export { createNoteSchema, updateNoteSchema };

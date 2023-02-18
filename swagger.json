@@ -199,6 +199,51 @@
         ],
         "responses": { "201": { "message": "ok" } }
       },
+      "patch": {
+        "tags": ["note"],
+        "summary": "update a note",
+        "description": "",
+        "operationId": "updateNote",
+
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "noteId",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "note id"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "title": {
+                    "type": "string",
+                    "example": "food 4 thougts",
+                    "description": "etitle of the note"
+                  },
+                  "content": {
+                    "type": "string",
+                    "example": "content of food 4 thougts",
+                    "description": "content of the note"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": { "201": { "message": "ok" } }
+      },
       "delete": {
         "tags": ["note"],
         "summary": "all notes for a user",

@@ -19,16 +19,15 @@ noteRouter.post(
   createNote
 );
 
+noteRouter.get("/", isAuth, getAllNotes);
+
+noteRouter.get("/:noteId", isAuth, getANote);
 noteRouter.patch(
-  "/update-note",
+  "/:noteId",
   isAuth,
   validateRequestBody(updateNoteSchema),
   updateNote
 );
-
-noteRouter.get("/", isAuth, getAllNotes);
-
-noteRouter.get("/:noteId", isAuth, getANote);
 
 noteRouter.delete("/:noteId", isAuth, deleteNote);
 
