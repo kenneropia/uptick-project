@@ -10,8 +10,8 @@
         "description": "url for local development"
       },
       {
-        "url": "http://localhost:3001/",
-        "description": "url for local development"
+        "url": "https://uptick-project.onrender.com/api",
+        "description": "url for live development"
       }
     ]
   },
